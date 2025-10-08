@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Website</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./feedback.css">
+    <link rel="shortcut icon" href="./favicon-removebg-preview (1).png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: rgb(236,195,44,0.664);">
+   <nav class="navbar navbar-expand-lg navbar-">
+        <div class="container-fluid">
+          <img src="./logo-removebg-preview.png" alt="" width="130px" height="60px">
+          <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./about us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tricks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#" onclick="showSection('basic')">Basic Creations</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="showSection('elaborate')">Elaborate
+                                    Creations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./contact.html" background-color="#b7a08b">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="./feedback.html" background-color="#b7a08b">Feedback Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+      </nav>
+<div class="feed_back">
+    <label for="">
+            Name
+            <input type="text" name="" id="name" placeholder="Enter your name">
+        </label>
+        <label for="">
+            Contact No 
+            <input type="tel" name="" id="contact" placeholder="Enter your contact number">
+        </label>
+        <p>Rate Us</p>
+        <div class="radio_container">
+        <span>1<input type="radio" name="radio" id="radio"></span>
+        <span>2<input type="radio" name="radio" id="radio"></span>
+        <span>3<input type="radio" name="radio" id="radio"></span>
+        <span>4<input type="radio" name="radio" id="radio"></span>
+        <span>5<input type="radio" name="radio" id="radio"></span></div>
+        <input type="button" value="Rate Us" onclick="test()">
+
+</div>
+<footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-section">
+                    <h5>About Origami</h5>
+                    <p>Discover the art of paper folding with our tutorials, patterns, and creative ideas. Join our community of origami enthusiasts!</p>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Tricks</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="mt-3">Subscribe to our newsletter</p>
+                    <div class="input-group newsletter">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-subscribe" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-3">
+                <p>&copy; 2025 Origami Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+        function test(){
+            let name=document.getElementById("name").value;
+            let contact=document.getElementById("contact").value;
+            let radio=document.getElementById("radio").value;
+           alert("Thanks for the supportive rating.")
+        }
+        
+    </script>
+</body>
+</html>

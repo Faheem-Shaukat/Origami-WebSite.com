@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+    
+}
+.container{
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_form input{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.login_form input::placeholder{
+    color: white;
+}
+label{
+    color: white;
+}
+p{
+    text-align: center;
+    color:rgb(25, 2, 109);
+}
+h1{
+    color:rgb(59, 19, 24);
+    font-style: italic;
+}
+
+
+    
+
+.login_form input[type="text"],
+.login_form input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.div-btn{
+    display: flex;
+    justify-content: center;
+}
+.div-btn button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+.div-btn button:hover{
+    background-color: black;
+    color: white;
+    transition: ease-in-out 1s;
+    transform: scale(1.1);
+}
+.background-clip{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-width: 900px) {
+  .container {
+    gap: 48px;
+  }
+  .side {
+    display: block;
+  }
+}
+
+@media (max-width: 899px) {
+  .container {
+    padding: 20px;
+    min-height: auto;
+  }
+  .login_card {
+    padding: 22px;
+    border-radius: 12px;
+  }
+  .div-btn button {
+    width: 160px;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 14px;
+  }
+  .container {
+    flex-direction: column;
+    padding: 12px;
+    min-height: 100vh;
+    justify-content: center;
+  }
+  .login_card {
+    width: 100%;
+    padding: 18px;
+    max-width: 420px;
+  }
+  .login_card h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .login_card p {
+    text-align: center;
+  }
+  .div-btn {
+    width: 100%;
+  }
+  .div-btn button {
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+  }
+  .login_helpers {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .background-clip {
+    bottom: -20px;
+    opacity: 0.08;
+  }
+}
+
+.input-sm {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
